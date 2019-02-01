@@ -24,9 +24,9 @@ namespace Deliverable_3_Methods
             {
                 //This variable will gather data from user input
                 string input = Console.ReadLine();
+                //Execute void method
+                user(input);
 
-                Console.WriteLine("Hello " + input + "!");
-                Console.ReadKey(true);
 
             }
             catch
@@ -34,6 +34,13 @@ namespace Deliverable_3_Methods
                 Console.WriteLine("There was an error");
                 Console.ReadKey(true);
             } //End of catch
+        }
+
+        private static void user(string input)
+        {
+           
+            Console.WriteLine("Hello " + input + "!");
+            Console.ReadKey(true);
         }
     }
 }
